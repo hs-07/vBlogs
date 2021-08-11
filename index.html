@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/fontawesome-free-5.15.4-web/css/all.css" />
+
+    <title>vBlogs</title>
+  </head>
+
+  <body>
+    <!-- <div class="alert alert-dark alert-dismissible fade show" role="alert">
+      <strong>Holy guacamole!</strong> You should check in on some of those
+      fields below.
+      <button
+        type="button"
+        class="btn-close"
+        data-bs-dismiss="alert"
+        aria-label="Close"
+      ></button>
+    </div> -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="./logo.png" alt="" width="38" height="38" />
+        </a>
+        <a class="navbar-brand mb-0 h1" href="#">vBlogs</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDarkDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                News
+              </a>
+              <ul
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDarkDropdownMenuLink"
+              >
+                <li><a class="dropdown-item" href="https://economictimes.indiatimes.com/topic/Google" target="#">Google</a></li>
+                <li><a class="dropdown-item" href="https://www.independent.co.uk/topic/apple" target="#">Apple</a></li>
+                <li>
+                  <a class="dropdown-item" href="https://economictimes.indiatimes.com/topic/Android" target="#">Android</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://telecom.economictimes.indiatimes.com/tag/ios" target="#">IOS</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" target="https://economictimes.indiatimes.com/topic/Facebook">Facebook</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="https://economictimes.indiatimes.com/topic/Amazon" target="#">Amazon</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-danger" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./photo-1511376777868-611b54f68947 (1).jfif"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Designer. Photographer. Blogger</h1>
+            <p>
+              Nevr forget that once upon a time, in an unguarded moment you
+              recognized yourself as a friend
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./photo-1516656863674-c0cc173d1980.jfif"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Images Matters</h1>
+            <p>
+              Manner before lively wholly am mr indeed expect one every merry
+              his yet has her. You mistress get dashwood children off manner to
+              other
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./photo-1541308383720-fa208853c143.jfif"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h1>Night-Light</h1>
+            <p>
+              A blog to enlighten your dreams can be hidden inside yourself so
+              sit in night and explore
+            </p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="p-3 mb-0 bg-dark bg-gradient text-white">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">News</a>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./google-logo-blurred-background-400x240.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Google</h5>
+                <p
+                  class="card-text text-dark"
+                  href="https://knowtechie.com/anyone-under-18-years-old-can-ask-google-to-remove-photos-of-themselves-from-search-results/"
+                >
+                  Anyone under 18 years old can ask Google to remove photos of
+                  themselves from search results
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 20 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./spotify-logo-blurred-background-1000x600.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Entertainment</h5>
+                <p
+                  class="card-text text-dark"
+                  href="https://knowtechie.com/spotify-collects-a-ridiculous-amount-of-data-about-its-users-and-their-listening-habits/"
+                >
+                  Spotify collects a ridiculous amount of data about its users
+                  and their listening habits
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 2 hours ago</small>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100">
+              <img
+                src="./iphone-12-pro-max-camera-400x240.jpg.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title text-dark">Apple</h5>
+                <p
+                  class="card-text text-dark"
+                  href="https://knowtechie.com/the-iphone-13-pro-is-going-to-have-some-sweet-new-camera-tricks-including-portrait-video-mode/"
+                >
+                  The iPhone 13 Pro is going to have some sweet new camera
+                  tricks including Portrait video mode
+                </p>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 4 hours ago</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+          <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">Reviews</a>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-md-6">
+            <div
+              class="
+                row
+                g-0
+                border
+                rounded
+                overflow-hidden
+                flex-md-row
+                mb-4
+                shadow-sm
+                h-md-250
+                position-relative
+              "
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary"
+                  >GADGETS</strong
+                >
+                <h3 class="mb-0">Review: Campfire Audio Honeydew IEMs</h3>
+                <div class="mb-1 text-muted">August 10, 2021</div>
+                <p class="card-text mb-auto">
+                  For $249, there’s a lot to love here.
+                </p>
+                <a
+                  href="https://knowtechie.com/review-campfire-audio-honeydew-iems/"
+                  target="#"
+                  class="stretched-link"
+                  >Continue reading</a
+                >
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="./campfire-audio-iems-400x240.jpg.webp"
+                  class="bd-placeholder-img"
+                  width="250"
+                  height="250"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="
+                row
+                g-0
+                border
+                rounded
+                overflow-hidden
+                flex-md-row
+                mb-4
+                shadow-sm
+                h-md-250
+                position-relative
+              "
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success"
+                  >REVIEWS</strong
+                >
+                <h3 class="mb-0">Review: Master & Dynamic MW08 earbuds</h3>
+                <div class="mb-1 text-muted">August 6, 2021</div>
+                <p class="mb-auto">
+                  If you’re someone who refuses to buy Apple’s AirPods Pro,
+                  Master & Dynamic’s MW08 is something you should put on your
+                  radar.
+                </p>
+                <a
+                  href="https://knowtechie.com/review-master-dynamic-mw08-earbuds/"
+                  class="stretched-link"
+                  target="#"
+                  >Continue reading</a
+                >
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="./master-dynamic-mw08-review-knowtechie-400x240.jpeg.webp"
+                  class="bd-placeholder-img"
+                  width="250"
+                  height="280"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="
+                row
+                g-0
+                border
+                rounded
+                overflow-hidden
+                flex-md-row
+                mb-4
+                shadow-sm
+                h-md-250
+                position-relative
+              "
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-danger"
+                  >#GAMETECHIE</strong
+                >
+                <h3 class="mb-0">
+                  Review: Cooler Master SK622 Bluetooth gaming keyboard
+                </h3>
+                <div class="mb-1 text-muted">August 3, 2021</div>
+                <p class="card-text mb-auto">
+                  This compact wireless keyboard is designed for gaming on the
+                  go.
+                </p>
+                <a
+                  href="https://knowtechie.com/review-cooler-master-sk622-bluetooth-gaming-keyboard/"
+                  target="#"
+                  class="stretched-link"
+                  >Continue reading</a
+                >
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="./cooler-master-gaming-keyboard-bluetooth-main-400x240.jpg.webp"
+                  class="bd-placeholder-img"
+                  width="250"
+                  height="280"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div
+              class="
+                row
+                g-0
+                border
+                rounded
+                overflow-hidden
+                flex-md-row
+                mb-4
+                shadow-sm
+                h-md-250
+                position-relative
+              "
+            >
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-warning"
+                  >REVIEWS</strong
+                >
+                <h3 class="mb-0">Review: 360 Video Doorbell X3</h3>
+                <div class="mb-1 text-muted">July 26, 2021</div>
+                <p class="mb-auto">There's really not much to dislike here.</p>
+                <a
+                  href="https://knowtechie.com/review-360-video-doorbell-x3/"
+                  target="#"
+                  class="stretched-link"
+                  >Continue reading</a
+                >
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img
+                  src="./360-video-doorbell-x3-main-400x240.jpg.webp"
+                  class="bd-placeholder-img"
+                  width="250"
+                  height="250"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="container">
+        <nav class="navbar navbar-dark bg-transparent">
+          <div class="container-fluid">
+            <span class="navbar-brand mb-1 h1">Some interesting facts</span>
+          </div>
+        </nav>
+        <div class="accordion accordion-flush mb-5" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne"
+                aria-expanded="false"
+                aria-controls="flush-collapseOne"
+              >
+                Do we need to protect the night?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingOne"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body text-dark">
+                If we talk about protecting the the enviornemtn, these days we
+                very much focus on climate change. Scientist have known since
+                more than years that we have a problem. And so did politicians
+                like Ronald Reagan and Margaret Thatcher. Seriously, we have a
+                huge problem at our hands and we are running out of time. If you
+                do some reading on climate change and the environment, you will
+                also discover quite easily that it is not the only environmental
+                problem we have. We have loads of them. Plastic waste, toxic
+                substances in the water, dying forests, mass extinction, there
+                is a sheer endless list of troubles and it is growing. And now
+                there are some people talking about light pollution. Seriously?
+                How can light be a pollution? It’s healthy, it’s beautiful, it
+                makes us feel good. But some people come along and demand
+                regulations and curfews. Isn’t that over the top? Or do we need
+                top protect the night? Yes, we need to, and – to be honest – we
+                want to do it. I will try to explain why this is the case and
+                why protecting the night means improving the quality of our
+                life.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo"
+                aria-expanded="false"
+                aria-controls="flush-collapseTwo"
+              >
+                92 per cent of the world's currency is digital
+              </button>
+            </h2>
+            <div
+              id="flush-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingTwo"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body text-dark">
+                This means that most of the money you earn, transact with, use
+                to buy goods/services and so on exists only on computers and
+                hard drives. Only an estimated 8 per cent of currency globally
+                is physical money. All the black money piles come from within
+                this 8 per cent. This is a fair estimate that economists seem to
+                agree on though, not an exact figure. This low percentage seems
+                absurd but when you stop to think, it makes sense considering
+                that most large transactions are done electronically anyway.
+                Banks store electronically too and the 92 per cent includes all
+                kinds of transactions done using credit/debit cards and wire
+                transfers. Might be a good idea to revisit all those hacker
+                movies where a nerdy computer hacker manages to siphon billions
+                off in just a few minutes.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree"
+                aria-expanded="false"
+                aria-controls="flush-collapseThree"
+              >
+                Covid-19: Can Melatonin and Vitamin D help?
+              </button>
+            </h2>
+            <div
+              id="flush-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample"
+            >
+              <div class="accordion-body text-dark">
+                Right now, there is pretty much one topic: Covid-19. Many hope
+                for a vaccine, but it’s not less important to find a treatment
+                and others way to prevent infection. The internet is full of
+                advise on how to boost the immune system. Some of it is good,
+                some of it is crap, some of it is simply a way for other people
+                to make money. So I got the idea to show people how to boost the
+                immune system with light, darkness and good sleep. It is low
+                cost and has few side effects, but so far, not too many people
+                talk about light as a health factor. Initially I thought about
+                melatonin, but I also wanted to have a look at the “sun vitamin”
+                D. I had no idea that I would get right into a lively discussion
+                concerning Covid-19. While media mostly talk about Chloroquin
+                and Remdesivir, some researchers have already connected the
+                threads and even done some research that shows how Covid-19 can
+                be helpful with prevention and treatment of Covid-19. To be
+                absolutely clear: None of these hormones will protect you on its
+                own from Covid-19. They are no miracle cures to become healthy
+                again. But the right use of light, and a sufficient supply of
+                melatonin and vitamin D can help your body to fight SARS-Cov2
+                and might make a difference in the outcome if you catch
+                Covid-19. They can even improve the chances in severe cases when
+                added to other drugs.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr class="p-0 m-0" />
+    <!-- Footer -->
+    <div class="bg-black text-secondary px-4 py-5 text-center">
+      <div class="py-5">
+        <h1 class="display-5 fw-bold text-white">
+          “It's not a faith in technology. It's faith in people.”
+        </h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="fs-5 mb-4">
+            If future generations are to remember us more with gratitude than
+            sorrow, we must achieve more than just the miracles of technology.
+            We must also leave them a glimpse of the world as it was created,
+            not just as it looked when we got through with it.
+          </p>
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-outline-info btn-lg px-4 me-sm-3 fw-bold"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              LogIn
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content bg-gradient bg-info">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-black" id="staticBackdropLabel">
+                      LogIn
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="row mb-3">
+                        <div class="col-sm-10">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="inputEmail3"
+                            placeholder="Email"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-10">
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="inputPassword3"
+                            placeholder="Password"
+                          />
+                        </div>
+                      </div>
+                      <div class="row mb-3">
+                        <div class="col-sm-10 offset-sm-2">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="gridCheck1"
+                            />
+                            <label
+                              class="form-check-label text-black"
+                              for="gridCheck1"
+                            >
+                              Remember Me
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">
+                        LogIn
+                      </button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Dismiss
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg px-4"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              SignUp
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content bg-warning bg-gradient">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-black" id="exampleModalLabel">
+                      Create an account
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="row g-3">
+                      <div class="col-md-6">
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="inputEmail4"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="inputPassword4"
+                          placeholder="Password"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputAddress"
+                          placeholder="Residential Address"
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputAddress2"
+                          placeholder="Occupation"
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="inputCity" class="form-label">City</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="inputCity"
+                        />
+                      </div>
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">State</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">Zip</label>
+                        <input type="text" class="form-control" id="inputZip" />
+                      </div>
+                      <div class="col-12">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            id="gridCheck"
+                          />
+                          <label class="form-check-label" for="gridCheck">
+                            Check me out
+                          </label>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <button type="submit" class="btn btn-primary">
+                          SignUp
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Dismiss
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://www.instagram.com/_hs.07_/" target="#"
+        ><i class="fab fa-instagram mx-2"></i
+      ></a>
+      <a href="https://github.com/hs-07" target="#">
+        <i class="fab fa-github mx-2"></i
+      ></a>
+      <a href="https://in.linkedin.com/" target="#"
+        ><i class="fab fa-linkedin-in mx-2"></i
+      ></a>
+      <p>
+        Copyright © 2021 vBlogs / Powered by
+        <a rel="nofollow" href="https://www.instagram.com/_hs.07_/" target="#"
+          >HS07</a
+        >
+      </p>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
